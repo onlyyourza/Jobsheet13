@@ -1,4 +1,4 @@
-import java.util.Scanner;;
+import java.util.Scanner;
 public class ExpressingGratitude_14 {
     public static String getGreetingRecipient() {
         Scanner input = new Scanner(System.in);
@@ -10,12 +10,17 @@ public class ExpressingGratitude_14 {
 
     public static void sayThankYou() {
         String name = getGreetingRecipient();
-        System.out.println("Thankyou "+name+" for being the best teacher in the world\n" +
-            " you inspired in me a love for learning and made me feel like i could ask you anything."
+        System.out.println("Thankyou " + name + " for being the best teacher in the world\n" +
+            "you inspired in me a love for learning and made me feel like I could ask you anything."
         );
+    }
+
+    public static void sayAdditionalGreetings(String message) {
+        System.out.println(message);
     }
 
     public static void main(String[] args) {
         sayThankYou();
+        sayAdditionalGreetings("Wishing you all the best and continued success!");
     }
 }
